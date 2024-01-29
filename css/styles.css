@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+#info-box {
+    background-color: white;
+    position: absolute;
+    display: block;
+    margin-left: 70vw;
+    border-radius: 6px;
+    padding: 30px;
+    border: 1px solid #69B34C;
+}
+
+#info-box a {
+    color: green;
+}
+
+#info-box h1 {
+    color: green;
+}
+
+#accordion {
+    margin: 7vh 10vw;
+    width: 910px;
+}
+
+#accordion li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #69B34C;
+}
+
+#accordion label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: green;
+}
+
+#accordion label span {
+    transform: rotate(90deg);
+    font-size: 22px;
+    color: black;
+}
+
+.docs {
+    padding-top: 50px;
+    text-align: left;
+}
+
+.docs a {
+    color: black;
+}
+
+.docs a i {
+    margin-right: 5px;
+}
+
+.vid {
+    padding-top: 30px;
+}
+
+.vid-first {
+    padding-top: 40px;
+}
+
+.vid-last {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.no-content {
+    text-align: center;
+}
+
+#accordion label + input[type="checkbox"] {
+    display: none;
+}
+
+#accordion .content {
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#accordion .content p {
+    padding-bottom: 10px;
+}
+
+#accordion label + input[type="checkbox"]:checked + .content {
+    max-height: 6000px;
+}
+
+@media (max-width: 1800px) {
+
+    #accordion {
+        width: 680px;
+    }
+
+    iframe {
+        width: 640px;
+        height: 360px;
+    }
+
+    #info-box {
+        margin-left: 65vw;
+    }
+}
